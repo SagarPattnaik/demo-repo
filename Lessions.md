@@ -293,3 +293,19 @@ Fast-forward
 
 LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
 $
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ git branch
+  feature-1
+* main
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ git branch -d feature-1 
+Deleted branch feature-1 (was 2622199).
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ git branch
+* main
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$
