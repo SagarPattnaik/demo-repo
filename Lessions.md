@@ -113,3 +113,156 @@ branch 'main' set up to track 'origin/main'.
 LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
 $ git push origin main
 Everything up-to-date
+
+Creating a new repository in local folder and push it to github
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo
+$ cd demo-repo2/
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2
+$ ls -la
+total 0
+drwxr-xr-x 1 LENOVO 197121 0 May 31 11:03 ./
+drwxr-xr-x 1 LENOVO 197121 0 May 31 11:03 ../
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2 
+$ git init
+Initialized empty Git repository in C:/Sagar/Repo/GitHub/Demo/demo-repo2/.git/
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2 (master)
+$ ls -la
+total 5
+drwxr-xr-x 1 LENOVO 197121  0 May 31 11:06 ./drwxr-xr-x 1 LENOVO 197121  0 May 31 11:03 ../
+drwxr-xr-x 1 LENOVO 197121  0 May 31 11:06 .git/
+-rw-r--r-- 1 LENOVO 197121 21 May 31 11:05 README.md
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)    
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2 (master)
+$ git add .
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2 (master)
+$ git commit -m "Created README" -m "description"
+[master (root-commit) a4a33fc] Created README
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2 (master)
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2 (master)
+$ git remote add origin https://github.com/SagarPattnaik/demo-repo2.git
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2 (master)
+$ git remote -v
+origin  https://github.com/SagarPattnaik/demo-repo2.git (fetch)
+origin  https://github.com/SagarPattnaik/demo-repo2.git (push)
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 251 bytes | 31.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SagarPattnaik/demo-repo2.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo2 (master)
+
+Git Branches;
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo
+$ cd demo-repo
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ pwd
+/c/Sagar/Repo/GitHub/Demo/demo-repo
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ git branch
+* main
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ git checkout -b feature-1
+Switched to a new branch 'feature-1'
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git branch
+* feature-1
+  main
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git checkout main
+Switched to branch 'main'
+M       Lessions.md
+Your branch is up to date with 'origin/main'.       
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ git branch
+  feature-1
+* main
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ git checkout feature-1
+Switched to branch 'feature-1'
+M       Lessions.md
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git status
+On branch feature-1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Lessions.md
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git add .
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git status
+On branch feature-1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage) 
+        modified:   Lessions.md
+        modified:   README.md
+
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git commit -m "updated readme and lessions file"  
+[feature-1 04b68ae] updated readme and lessions file
+ 2 files changed, 132 insertions(+), 2 deletions(-) 
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.       
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ git checkout feature-1 
+Switched to branch 'feature-1'
