@@ -266,3 +266,30 @@ Your branch is up to date with 'origin/main'.
 LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
 $ git checkout feature-1 
 Switched to branch 'feature-1'
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ git branch
+  feature-1
+* main
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 624 bytes | 62.00 KiB/s, done.
+From https://github.com/SagarPattnaik/demo-repo
+   60b17c1..cf0d454  main       -> origin/main
+Updating 60b17c1..cf0d454
+Fast-forward
+ Lessions.md | 155 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ README.md   |   5 +-
+ 2 files changed, 158 insertions(+), 2 deletions(-)
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$
