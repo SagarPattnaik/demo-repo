@@ -240,3 +240,29 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git add .
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git status
+On branch feature-1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage) 
+        modified:   Lessions.md
+        modified:   README.md
+
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git commit -m "updated readme and lessions file"  
+[feature-1 04b68ae] updated readme and lessions file
+ 2 files changed, 132 insertions(+), 2 deletions(-) 
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (feature-1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.       
+
+LENOVO@DESKTOP-MU2L3BP MINGW64 /c/Sagar/Repo/GitHub/Demo/demo-repo (main)
+$ git checkout feature-1 
+Switched to branch 'feature-1'
